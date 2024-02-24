@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Student Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #8cd3f0;
+            font-family: Arial, sans-serif;
+            padding:1em;
+        }
+
+        form {
+            margin: 25px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form table {
+            width: 95%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        form table th, td {
+            border: 1px solid #ddd;
+            padding: 8px 14px;
+            text-align: left;
+        }
+        form table th {
+            background-color: #f2f2f2;
+        }
+        form table input[type="text"],
+        form table input[type="email"],
+        form table select,
+        form table input[type="date"] {
+            width: 95%;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+            margin-top: 3px;
+            margin-bottom: 8px;
+        }
+        input[type="submit"] {
+            background-color: #0f4211;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0f4211;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" name="firstName"></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="lastName"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <select name="gender">
+                        <option value="a"></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <th>Zip Code</th>
+                <td><input type="text" name="zipCode"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
